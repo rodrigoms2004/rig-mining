@@ -1,0 +1,72 @@
+22.02.2021 at 01:00 AM
+
+root@rig1-hiveos:~# net-test 
+> Local Network Configuration:
+●        State: routable
+       Address: 192.168.72.38 on eth0
+       Gateway: 192.168.72.1 on eth0
+           DNS: 181.213.132.4
+                181.213.132.5
+DNS-over-HTTPS: Not enabled
+> Checking network connection:
+[PING] 192.168.72.1 (Gateway)                   [OK]	1 ms	
+[PING] 181.213.132.4 (DNS)                      [OK]	11 ms	
+[PING] 181.213.132.5 (DNS)                      [OK]	11 ms	
+[PING] 8.8.8.8 (DNS)                            [OK]	11 ms	
+[PING] 1.1.1.1 (DNS)                            [OK]	12 ms	
+[PING] 114.114.114.114 (DNS)                    [OK]	151 ms	
+> Checking connection to HIVE OS server:
+>>> hiveos.farm                                 [OK]	104.22.10.47 172.67.28.84 104.22.11.47
+[PING] hiveos.farm                              [OK]	15 ms	
+[WEB] http://hiveos.farm                        [OK]	243 ms	
+[WEB] https://hiveos.farm                       [OK]	432 ms	
+> Checking connection to repository server:
+[WEB] http://download.hiveos.farm/repo/binary   [OK]	271 ms	
+[WEB] http://download2.hiveos.farm/repo/binary  [OK]	439 ms	
+> Checking connection to worker API servers:
+>>> api.hiveos.farm (CURRENT)                   [OK]	62.4.9.18 163.172.125.106 62.4.9.15 62.4.9.3 62.4.9.11 62.4.9.17 62.4.9.1 62.4.9.10 62.4.9.16
+[PING] api.hiveos.farm                          [OK]	213 ms	
+[API] http://api.hiveos.farm (CURRENT)          [OK]	433 ms	
+[API] https://api.hiveos.farm                   [OK]	883 ms	
+[API] https://api.hiveos.farm:8443              [OK]	920 ms	
+>>> msk.hiveos.farm                             [OK]	185.22.234.157
+[PING] msk.hiveos.farm                          [OK]	261 ms	
+[API] http://msk.hiveos.farm                    [OK]	595 ms	
+[API] https://msk.hiveos.farm                   [OK]	1088 ms	
+
+
+22.02.2021 at 10:39 AM
+
+root@rig1-hiveos:~# net-test
+> Local Network Configuration:
+●        State: routable
+       Address: 192.168.72.38 on eth0
+       Gateway: 192.168.72.1 on eth0
+           DNS: 181.213.132.4
+                181.213.132.5
+DNS-over-HTTPS: Not enabled
+> Checking network connection:
+[PING] 192.168.72.1 (Gateway)                   [OK]	1 ms	
+[PING] 181.213.132.4 (DNS)                      [OK]	11 ms	
+[PING] 181.213.132.5 (DNS)                      [OK]	11 ms	
+[PING] 8.8.8.8 (DNS)                            [OK]	11 ms	
+[PING] 1.1.1.1 (DNS)                            [OK]	12 ms	
+[PING] 114.114.114.114 (DNS)                    [OK]	154 ms	
+> Checking connection to HIVE OS server:
+>>> hiveos.farm                                 [OK]	172.67.28.84 104.22.10.47 104.22.11.47
+[PING] hiveos.farm                              [OK]	13 ms	
+[WEB] http://hiveos.farm                        [OK]	249 ms	
+[WEB] https://hiveos.farm                       [OK]	391 ms	
+> Checking connection to repository server:
+[WEB] http://download.hiveos.farm/repo/binary   [OK]	249 ms	
+[WEB] http://download2.hiveos.farm/repo/binary  [OK]	459 ms	
+> Checking connection to worker API servers:
+>>> api.hiveos.farm (CURRENT)                   [OK]	62.4.9.11 62.4.9.15 62.4.9.1 62.4.9.18 62.4.9.10 62.4.9.17 62.4.9.16 62.4.9.3 163.172.125.106
+[PING] api.hiveos.farm                          [OK]	218 ms	
+[API] http://api.hiveos.farm (CURRENT)          [OK]	3677 ms	
+[API] https://api.hiveos.farm                   [OK]	905 ms	
+[API] https://api.hiveos.farm:8443              [OK]	914 ms	
+>>> api2msk.hiveos.farm                         [OK]	217.144.98.7 185.22.233.65
+[PING] api2msk.hiveos.farm                      [OK]	260 ms	
+[API] http://api2msk.hiveos.farm                [OK]	578 ms	
+[API] https://api2msk.hiveos.farm               [OK]	1107 ms	
